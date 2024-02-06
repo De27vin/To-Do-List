@@ -1,9 +1,13 @@
+// Setzt let's und lädt alle späteren Funktionen auf Laden der Seite
 document.addEventListener('DOMContentLoaded', function () {
     let inputFeld = document.getElementById('inputFeld');
     let addKnopf = document.getElementById('addKnopf');
     let ausgabeListe = document.getElementById('ausgabeListe');
     let deleteAll = document.getElementById('deleteAll');
 
+    window.onload = function() {
+        alert('Nach hinzufügen von Einträgen werden diese auf Knopfdruck wieder gelöscht. Mit dem Mülleimer löscht man alle Einträge.');
+    };
 
     // Funktion, um Cookies zu setzen
     function setCookie(cname, cvalue, exdays) {
@@ -13,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=None;Secure";
     }
 
-    // Funktion, um den Wert eines Cookies zu lesen
+    // Funktion, um den Wert der Cookies zu lesen
     function getCookie(cname) {
         let name = cname + "=";
         let decodedCookie = decodeURIComponent(document.cookie);
@@ -54,32 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Initialisiert die Liste beim Laden
+    // Lädt die Liste beim Laden der Website
     loadListFromCookie();
-
-
-
-        // Zugriff über ID
-        let femboyNavButton = document.getElementById('femboysNearYou');
-        let loadingFemboys = document.getElementById('loadingFemboys');
-    
-        // Das Ladeelement zu Beginn ausblenden
-        loadingFemboys.style.display = 'none';
-    
-        // Event-Listener hinzufügen, um auf Klicks zu reagieren
-        femboyNavButton.addEventListener('click', function() {
-            // Ladeelement anzeigen, wenn der Femboybutton geklickt wird
-            loadingFemboys.style.display = 'block';
-    
-            // Nachdem die Daten geladen wurden, solltest du das Ladeelement wieder ausblenden.
-
-            //Wenn x-knopf gedrück wieder aufhören laden
-            // loadingElement.style.display = 'none'; <- Dies sollte nach erfolgreichem Laden geschehen
-        });
-    
-
-
-
 
     // Fügt den eingegebenen Listeneintrag auf Plus-Button hinzu
     addKnopf.addEventListener('click', function () {
