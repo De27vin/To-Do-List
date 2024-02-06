@@ -1,0 +1,111 @@
+
+#body {
+    background-color: pink;
+    font-family: Pacifico;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleh1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico';
+}
+
+#container1 {
+    width: 100%;
+}
+
+#container2 {
+    display: block;
+}
+
+#container3 {
+    display: flex;
+    justify-content: center;
+}
+
+#container4 {
+    width: 25%;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2.5rem;
+}
+
+#deleteAll {
+    border-radius: 0.3rem;
+    background-color: rgb(241, 149, 249);
+}
+
+#deleteAllDiv {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 0.3rem;
+}
+
+#deleteAll:hover {
+    box-shadow: 0 12px 16px 0 rgba(246, 126, 255, 0.5),0 17px 50px 0 rgba(229, 124, 255, 0.75);
+}
+
+#binImg {
+    width: 1.1rem;
+}
+
+#eingabe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#inputFeld, #addKnopf {
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+#inputFeld {
+    width: calc(100% - 3.5rem); 
+    background-color: rgb(241, 149, 249);
+    border: none;
+    font-size: 1rem;
+}
+
+#addKnopf {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(241, 149, 249);
+    color: white;
+    cursor: pointer; 
+    margin-left: 0.5rem; 
+}
+
+#plusImg {
+    width: 2rem;
+}
+
+
+#addKnopf:hover {
+    background-color: rgb(rgb(123, 0, 180), );
+    box-shadow: 0 12px 16px 0 rgba(246, 126, 255, 0.5),0 17px 50px 0 rgba(229, 124, 255, 0.75);
+}
+
+#ausgabeListe p {
+    color: pink;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
